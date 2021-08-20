@@ -14,6 +14,9 @@ class ThridViewController: UIViewController {
         super.viewDidLoad()
         print (textInfo)
     }
+    
+    
+    
     @IBAction func NextForForthView(_ sender: Any) {
         let nextVC = UIStoryboard(name: "ForthStoryboard", bundle: Bundle.main).instantiateViewController(identifier: "4") as! ForthViewController
         

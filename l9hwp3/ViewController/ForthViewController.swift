@@ -18,6 +18,14 @@ class ForthViewController: UIViewController {
         
         LableForForthView.text = textInfo
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "5" {
+            let toVC = segue.destination as! FifthViewController
+            
+            toVC.textInfo = textInfo
+            toVC.modalTransitionStyle = .flipHorizontal
     
     
+}
+    }
 }
